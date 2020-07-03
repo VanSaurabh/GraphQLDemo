@@ -11,4 +11,5 @@
 `Steps to run`
 1. Download or clone the project.
 2. Open it in an IDE and run the main class from GraphQlDemoApplication class.
-or, Fire "mvn clean install" to build the project and then go to target folder and fire 'java -jar <jar file name>'
+or, Fire "mvn clean install" to build the project and then go to target folder 
+and run "java -jar [jarFileName]" command
