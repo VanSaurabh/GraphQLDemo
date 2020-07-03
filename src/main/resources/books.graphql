@@ -28,7 +28,7 @@ type Mutation {
     addBook(
         title: String
         publisher: String
-        author: String
+        author: [AuthorInput]
         publishedDate: String
         ): Book
     updateBook(

@@ -4,7 +4,6 @@ import com.graphql.model.Author;
 import com.graphql.model.Book;
 import com.graphql.repository.AuthorRepository;
 import com.graphql.repository.BookRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
