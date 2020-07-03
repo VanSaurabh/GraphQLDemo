@@ -37,9 +37,10 @@ type Mutation {
         publisher: String
         author: [AuthorInput]
         publishedDate: String
+         ): Book
 }
 
-input AuthorType {
+input AuthorInput {
     authorId: String
     authorName: String
     age: String

@@ -52,6 +52,7 @@ public class GraphQLService {
             RuntimeWiring runtimeWiring = buildRuntimeWiring();
             GraphQLSchema graphQLSchema = new SchemaGenerator()
                     .makeExecutableSchema(typeDefinitionRegistry, runtimeWiring);
+            graphQL = GraphQL.newGraphQL(graphQLSchema).build();
         }else {
             logger.error("Schema file not found...");
         }
