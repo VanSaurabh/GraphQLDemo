@@ -14,7 +14,7 @@ type Book {
     id: ID
     title: String
     publisher: String
-    author: [Author]
+    authors: [Author]
     publishedDate: String
 }
 type Author {
@@ -28,14 +28,14 @@ type Mutation {
     addBook(
         title: String
         publisher: String
-        author: [AuthorInput]
+        authors: [AuthorInput]
         publishedDate: String
         ): Book
     updateBook(
         bookId: String
         title: String
         publisher: String
-        author: [AuthorInput]
+        authors: [AuthorInput]
         publishedDate: String
          ): Book
 }

@@ -36,7 +36,9 @@ public class SaveBook implements DataFetcher<Book> {
         Map<String, Object> arguments = dataFetchingEnvironment.getArguments();
         Book book = new Book(String.valueOf(arguments.get("title")), String.valueOf(arguments.get("publisher")),
                 String.valueOf(arguments.get("publishedDate")));
-        LinkedHashMap<String, String> authorMap = ((List<LinkedHashMap<String, String>>)arguments.get("author")).get(0);
+        LinkedHashMap<String, String> authorMap = ((List<LinkedHashMap<String, String>>) arguments
+                .get("authors"))
+                .get(0);
         Author author = new Author(authorMap.get("authorName"), authorMap.get("age"));
 
         authorRepository.save(author);

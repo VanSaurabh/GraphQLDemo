@@ -33,8 +33,8 @@ public class UpdateBook implements DataFetcher<Book> {
         Set<Author> authorSet = new HashSet<>();
         List<LinkedHashMap<String, String>> authorsList;
 
-        if(Objects.nonNull(arguments.get("author"))) {
-            authorsList = (List<LinkedHashMap<String, String>>) arguments.get("author");
+        if(Objects.nonNull(arguments.get("authors"))) {
+            authorsList = (List<LinkedHashMap<String, String>>) arguments.get("authors");
             authorsList.forEach(authorDetails -> {
                 Long authorId = Long.valueOf(authorDetails.get("authorId"));
                 Author author = authorRepository.findById(authorId).orElse(null);
